@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <h1>Carrinho de Compras</h1>
+    <div id="itensCarrinho"></div>
+    <br>
+    <a href="teste.html">Voltar aos Produtos</a>
+
+    <script>
+        function mostrarCarrinho() {
+            const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            const itensCarrinhoDiv = document.getElementById('itensCarrinho');
+
+            if (carrinho.length === 0) {
+                itensCarrinhoDiv.innerHTML = '<p>Seu carrinho está vazio.</p>';
+                return;
+            }
+
+            let html = '<ul>';
+            carrinho.forEach(item => {
+                html += `<li>${item.nome} - R$ ${item.preco.toFixed(2)}</li>`;
+            });
+            html += '</ul>';
+            itensCarrinhoDiv.innerHTML = html;
+        }
+
+        // Chama a função para mostrar os itens no carregamento da página
+        mostrarCarrinho();
+    </script>
+</body>
+</html>

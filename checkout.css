@@ -1,0 +1,147 @@
+html {
+  
+  margin: 20px 100px 30px 100px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  
+
+}
+.logo{
+  font-size: 2.5rem;
+  color:#9e49c9;
+  font-weight: bolder;
+  font-family: montserrat;
+  text-decoration: none;
+}
+.col h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.email{
+  width: 59rem;
+
+}
+input::placeholder{
+  font-family: montserrat;
+  padding-left: 1rem;
+  font-size: 13px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 2em;
+  letter-spacing: .1em;
+  padding-top: 2rem;
+}
+
+.customer-order, .customer-pay, .customer-info {
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: .5px solid #d0cfd0;
+}
+
+.btn {
+  background-color: #000;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1em;
+  font-size: 8px;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1em;
+  border: 1px solid #555555;
+}
+.formErro{
+  width: 55rem;
+  height: 2rem;
+  color: crimson;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  text-align: end;
+
+}
+.formvali{
+  width: 55rem;
+  height: 2rem;
+  color: rgb(32, 134, 81);
+  font-family: 'Montserrat';
+  font-size: 12px;
+  text-align: end;
+
+}
+span {
+  color: #9e49c9;
+}
+.input-cep{
+  border: .5px solid #d0cfd0;
+  width: 22rem;
+  height: 4rem;
+}
+.input-cep::placeholder{
+  font-size: 13px;
+}
+.customer-order {
+  position: fixed;
+  margin-right: 100px;
+  width: 57rem;
+}
+.produtos-add{
+  background-color: #ffffff;
+  height: 3rem;
+  color: #000000;
+}
+.valorfrete{
+  color: rgb(42, 42, 42);
+}
+.fa {
+  padding: 5px;
+  margin: 0px 0px 30px 0px;
+  text-align: left;
+  color: #555555;
+}
+
+#accept, label {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #555555;
+  letter-spacing: .1em;
+}
+.btncalc{
+  width: 7rem;
+  height: 4rem;
+  background-color: white;
+  border: .5px solid #d0cfd0;
+  color: #818081;
+  font-family: montserrat;
+  margin-left: 2rem;
+}
+.botao-house{
+  margin-left: 16rem;
+  width: 7%;
+  text-align: center;
+  margin-top: 4rem;
+  background-color: white;
+  border: none;
+}
+.wrapper h1 {
+  text-align: center;
+  align-items: center;
+
+}

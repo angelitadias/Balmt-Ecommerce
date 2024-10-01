@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/checkout.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700|Playfair+Display:400,700" rel="stylesheet">
+  
+  <title>Checkout | BALMT</title>
+
+<body>
+  <div class="wrapper">
+    <a href="index.html">
+    <button class="botao-house">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" color="black">
+        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+      </svg>
+    </button>
+    </a>
+    <h1 class="logo">CHECKOUT</h1>
+
+    <div class="left col col-md-6">
+      <div class="customer-info">
+        <h2><span>1</span> Email</h2>
+        <input type="text" placeholder="Digite o seu email aqui" class="email" id="user">
+
+      </div>
+      <div class="customer-pay">
+        <h2><span>2</span> Pagamento</h2>
+        <p id="accept">Cartão de Débito / Crédito</p>
+        <i aria-hidden="true" class="fa fa-cc-mastercard"></i> <i aria-hidden="true" class="fa fa-cc-discover"></i> <i aria-hidden="true" class="fa fa-cc-visa"></i> <i aria-hidden="true" class="fa fa-cc-amex"></i>
+        <div class="form-group">
+          <label for="usr">Número do cartão</label> 
+          <div class="formErro" id="formErro"></div>
+          <input class="form-control" id="num" type="number" placeholder="0000 0000 0000 0000">
+        </div>
+        <div class="form-group">
+          <label for="num">Nome impresso no cartão</label>
+          <div class="formErro" id="formErro"></div>
+          <input class="form-control" id="nome" type="text" placeholder="ex: Maria Silva">
+        </div>
+        <div class="form-group">
+          <label for="usr">Data de expiração:</label> 
+          <div class="formErro" id="formErro"></div>
+          <input class="form-control" id="data" type="text" placeholder="ex: 12/27">
+        </div>
+
+        <button class="btn btn-default" type="submit" onclick="cadastrar()">PRONTO!</button>
+        <div class="formvali" id="validacao"></div>
+      </div>
+      <div class="customer-info">
+        <h2><span>3</span> Rever Produtos</h2>
+        <div class="produtos-add" id="produtos">
+        </div>
+      </div>
+    </div>
+    <div class="right col col-md-6">
+      <div class="customer-order">
+        <h2><span>4</span> Subtotal</h2>
+        <p><span>Frete</span>
+        </p>
+        <input type="number" placeholder="Digite aqui o seu CEP" id="cep" class="input-cep"><button onclick="calcfrete()" class="btncalc">Calcular</button>
+        <br>
+        <p><span>Subtotal</span>
+        </p>
+        <div class="subtotal" id="subtotal3"></div>
+        <br>
+        <p><span>Frete</span>
+        </p>
+        <div class="valorfrete" id="valorfrete"></div>
+        <hr>
+        <p><b>TOTAL:</b><div class="totalprodutos" id="total"></div></p>
+      </div>
+    </div>
+ 
+  </div>
+  
+<script src="/js/checkout.js"></script>
+</body>
+</html>
